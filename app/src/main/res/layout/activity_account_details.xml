@@ -1,0 +1,46 @@
+<!-- res/layout/activity_account_details.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AccountDetailsActivity">
+
+    <!-- res/layout/activity_account_details.xml -->
+    <!-- ... (previous layout code) ... -->
+
+    <TextView
+        android:id="@+id/balanceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Available balance: "
+        android:layout_centerInParent="true"/>
+
+    <EditText
+        android:id="@+id/transactionAmountEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter amount"
+        android:layout_below="@id/balanceTextView"
+        android:layout_centerInParent="true"
+        android:layout_margin="16dp"/>
+
+    <Button
+        android:id="@+id/withdrawButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Withdraw"
+        android:layout_below="@id/transactionAmountEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"/>
+
+    <Button
+        android:id="@+id/depositButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deposit"
+        android:layout_below="@id/withdrawButton"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"/>
+
+
+</RelativeLayout>
