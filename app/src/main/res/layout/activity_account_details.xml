@@ -1,46 +1,120 @@
-<!-- res/layout/activity_account_details.xml -->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".AccountDetailsActivity">
 
-    <!-- res/layout/activity_account_details.xml -->
-    <!-- ... (previous layout code) ... -->
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="43dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/banquemisr"
+        tools:layout_editor_absoluteY="13dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="164dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="146dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginBottom="519dp"
+        android:text="Banque Misr"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.068" />
 
     <TextView
         android:id="@+id/balanceTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Available balance: "
-        android:layout_centerInParent="true"/>
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="71dp"
+        android:layout_marginEnd="223dp"
+        android:layout_marginBottom="421dp"
+        android:text="Savings:" />
 
     <EditText
         android:id="@+id/transactionAmountEditText"
-        android:layout_width="match_parent"
+        android:layout_width="211dp"
         android:layout_height="wrap_content"
-        android:hint="Enter amount"
-        android:layout_below="@id/balanceTextView"
-        android:layout_centerInParent="true"
-        android:layout_margin="16dp"/>
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="58dp"
+        android:layout_marginBottom="353dp"
+        android:hint="Enter amount" />
 
     <Button
         android:id="@+id/withdrawButton"
-        android:layout_width="wrap_content"
+        android:layout_width="140dp"
         android:layout_height="wrap_content"
-        android:text="Withdraw"
-        android:layout_below="@id/transactionAmountEditText"
-        android:layout_centerHorizontal="true"
-        android:layout_margin="16dp"/>
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="242dp"
+        android:layout_marginBottom="232dp"
+        android:text="Withdraw" />
 
     <Button
         android:id="@+id/depositButton"
-        android:layout_width="wrap_content"
+        android:layout_width="136dp"
         android:layout_height="wrap_content"
-        android:text="Deposit"
-        android:layout_below="@id/withdrawButton"
-        android:layout_centerHorizontal="true"
-        android:layout_margin="16dp"/>
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="224dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="233dp"
+        android:text="Deposit" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/transactionAmountEditText"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="74dp"
+        android:layout_marginEnd="237dp"
+        android:layout_marginBottom="65dp"
+        android:text="Hello Marwa"
+        android:textColor="#8BC34A"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/withdrawButton"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="67dp"
+        android:layout_toStartOf="@+id/transactionAmountEditText"
+        android:text="Amount:"
+        android:textSize="16sp"
+        android:textStyle="bold" />
 
 
 </RelativeLayout>

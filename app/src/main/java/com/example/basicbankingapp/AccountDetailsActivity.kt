@@ -20,10 +20,11 @@ class AccountDetailsActivity : AppCompatActivity() {
         val withdrawButton: Button = findViewById(R.id.withdrawButton)
         val depositButton: Button = findViewById(R.id.depositButton)
 
-        balanceTextView.text = "Available balance: $accountBalance"
+        balanceTextView.text = "Savings: $accountBalance"
 
         withdrawButton.setOnClickListener {
             val transactionAmount = transactionAmountEditText.text.toString().toInt()
+
             accountBalance -= transactionAmount
             updateBalanceTextView()
 
@@ -45,6 +46,6 @@ class AccountDetailsActivity : AppCompatActivity() {
 
     private fun updateBalanceTextView() {
         val balanceTextView: TextView = findViewById(R.id.balanceTextView)
-        balanceTextView.text = "Available balance: $accountBalance"
+        balanceTextView.text = "Savings: $accountBalance"
     }
 }
